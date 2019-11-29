@@ -1,0 +1,36 @@
+$white: #fff !default;
+$gray: #f9f9f9 !default;
+$accent-color: #145474 !default;
+
+.header { grid-area: header; }
+.main { grid-area: main; }
+.menu { grid-area: menu; }
+
+.sidebar-right { grid-area: sidebar-right; }
+.footer { grid-area: footer; }
+
+#blog-listing {
+	display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr) ) ;
+        
+    min-height: 95vh;
+  
+  }
+  
+    
+// added this from orig site
+
+.article-card__title,
+.article-card__excerpt {
+    color: #666;
+	font-size: 0.875rem;
+	
+}
+
+.article-card__title a,
+.article-card__excerpt a {
+	font-size: 100%;
+	text-decoration: none;
+	color: #edb059;
+}
