@@ -68,7 +68,17 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+		  {/* <script src="https://code.jquery.com/jquery-3.4.1.slim.js" type="text/javascript" /> */}
+		  {/* <script src="/jquery-migrate.js" type="text/javascript" /> */}
+		  {/* <script src="/jquery.js" > </script>  */}
+		  
+		  
+		  <script type='text/javascript' src='https://highfrequencyperspectives.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+		  <script type='text/javascript' src='https://highfrequencyperspectives.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+		  <script src="/article-card.js"></script>
+
+	</Helmet>
   )
 }
 

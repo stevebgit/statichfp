@@ -11,26 +11,10 @@ $accent-color: #145474 !default;
 
 #blog-listing {
 	display: grid;
-    grid-gap: 10px;
+    grid-gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr) ) ;
         
     min-height: 95vh;
   
   }
   
-    
-// added this from orig site
-
-.article-card__title,
-.article-card__excerpt {
-    color: #666;
-	font-size: 0.875rem;
-	
-}
-
-.article-card__title a,
-.article-card__excerpt a {
-	font-size: 100%;
-	text-decoration: none;
-	color: #edb059;
-}

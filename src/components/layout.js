@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
-        <main>{children}</main>
+			  <main className="divi-100-article-card">{children}</main>
 		
         <footer>
           © {new Date().getFullYear()}, Built with
