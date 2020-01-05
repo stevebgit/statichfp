@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "env-cmd": "^10.0.1",
     "gatsby": "^2.18.4",
     "gatsby-image": "^2.2.34",
     "gatsby-plugin-manifest": "^2.2.30",
@@ -13,6 +14,7 @@
     "gatsby-plugin-sass": "^2.1.24",
     "gatsby-plugin-sharp": "^2.3.4",
     "gatsby-source-filesystem": "^2.1.39",
+    "gatsby-source-wordpress": "^3.1.54",
     "gatsby-transformer-sharp": "^2.3.6",
     "jquery": "^3.4.1",
     "node-sass": "^4.13.0",
@@ -29,8 +31,8 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
+    "build": "env-cmd -f.env.development gatsby build",
+    "develop": "env-cmd -f.env.development gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
