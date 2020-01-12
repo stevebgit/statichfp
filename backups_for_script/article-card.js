@@ -1,11 +1,11 @@
+getElementId
+
 function initCardJS() {
 	jQuery(document).ready(function ($) {
 		if (!$('.et_pb_blog_grid').length) {
 			return false;
 		} else {
-			//$('.et_pb_blog_grid').queryAl('.et_pb_post').each(function () {
-				.et_pb_blog_grid
-			$('.et_pb_blog_grid').queryAll('.et_pb_post').each(function () {
+			$('.et_pb_blog_grid').find('.et_pb_post').each(function () {
 				var $this = $(this);
 
 				/**

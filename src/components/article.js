@@ -4,7 +4,7 @@ import '../assets/scss/blog-listing.scss'
 
 const Article = props  => (
 	<article id={props.id} 
-			className="et_pb_post clearfix et_pb_has_overlay post-4059 post type-post status-publish format-standard has-post-thumbnail hentry category-abraham-hicks category-loa category-neville article-card"
+			className="et_pb_post clearfix et_pb_has_overlay post-4059 post type-post status-publish format-standard has-post-thumbnail hentry category-abraham-hicks category-loa category-neville"
 	>
 		<div className="et_pb_image_container">	
 			<a href={props.slug} className="entry-featured-image-url">
