@@ -1,13 +1,10 @@
-import React, { useEffect } from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Article from "../components/article"
-
-import anime from 'animejs/lib/anime.es.js';
-
 
 const IndexPage = () => {
 
@@ -18,7 +15,7 @@ const IndexPage = () => {
 				node {
 					id
 					title
-					date
+					date(formatString: "MMM DD, YYYY")
 					slug
 					excerpt
 					featured_media {

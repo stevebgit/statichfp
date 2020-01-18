@@ -32,7 +32,8 @@
   "license": "MIT",
   "scripts": {
     "build": "env-cmd -f.env.development gatsby build",
-    "develop": "env-cmd -f.env.development gatsby develop",
+	"develop": "env-cmd -f.env.development gatsby develop",
+	"debugit": "node --nolazy --inspect-brk node_modules/gatsby/dist/bin/gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",

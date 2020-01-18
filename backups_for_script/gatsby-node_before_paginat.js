@@ -34,7 +34,7 @@ exports.createPages = async ({ graphql, actions }) => {
 	const BlogPostTemplate = path.resolve("./src/templates/BlogPost.js")
 
 	const result = await graphql(`
-    query {
+    {
 		allWordpressPost {
 			edges {
 				node {
@@ -45,25 +45,23 @@ exports.createPages = async ({ graphql, actions }) => {
 							}
 						}
 					}
-					wordpress_id
 				}
 			}
 		}
   `)
 
-	// if (result.errors) {
-	// 	console.log(`Error while running GraphQL query.`)
-	// 	return
-	// }
+	if (result.errors) {
+		reporter.panicOnBuild(`Error while running GraphQL query.`)
+		return
+	}
 
 	const BlogPosts = result.data.allWordpressPost.edges
-	console.log(BlogPosts);
-	BlogPosts.forEach(edge => {
+	BlogPosts.forEach(post => {
 		createPage({
-			path: `/post/${edge.node.slug}`,
+			path: `/post/${post.node.slug}`,
 			component: BlogPostTemplate,
 			context: {
-				id: edge.node.wordpress_id,
+				id: post.node.wordpress_id,
 			},
 		})
 	})

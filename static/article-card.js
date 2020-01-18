@@ -76,6 +76,7 @@ jQuery(document).ready(function ($) {
 			 * Creates date div based off .published
 			 */
 			$(this).find('.published').text(function () {
+				//alert($(this).text());
 				return $(this).text().slice(0, -6);
 			});
 
