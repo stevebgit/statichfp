@@ -23,7 +23,7 @@ const BlogPostTemplate = ({ data }) => (
 		/>
 		<h1>{data.wordpressPost.title}</h1>
 		<p>
-			Written by {data.wordpressPost.author.name} on {data.wordpressPost.date}
+			Date: {data.wordpressPost.date}
 		</p>
 		
 		<div

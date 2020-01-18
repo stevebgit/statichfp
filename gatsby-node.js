@@ -38,17 +38,12 @@ exports.createPages = async ({ graphql, actions }) => {
 		allWordpressPost {
 			edges {
 				node {
-					featured_media {
-						localFile {
-							childImageSharp {
-								id
-							}
-						}
-					}
 					wordpress_id
+					slug
 				}
 			}
 		}
+	}
   `)
 
 	// if (result.errors) {
