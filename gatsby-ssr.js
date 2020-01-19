@@ -13,15 +13,15 @@ exports.onRenderBody = ({
 	setPreBodyComponents,
 	setPostBodyComponents,
 }) => {
+	// setHeadComponents([
+	// 	<script
+	// 		key="1"
+	// 		type="text/javascript"
+	// 		src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js?ver=1.12.4-wp"
+	// 		//src="/jquery.js?ver=1.12.4-wp"
+	// 	/>,
+	// ])
 	setHeadComponents([
-		<script
-			key="1"
-			type="text/javascript"
-			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js?ver=1.12.4-wp"
-			//src="/jquery.js?ver=1.12.4-wp"
-		/>,
-	])
-	setPreBodyComponents([
 		<script
 			key="2"
 			type="text/javascript"
