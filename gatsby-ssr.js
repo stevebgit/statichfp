@@ -13,14 +13,14 @@ exports.onRenderBody = ({
 	setPreBodyComponents,
 	setPostBodyComponents,
 }) => {
-	// setHeadComponents([
-	// 	<script
-	// 		key="1"
-	// 		type="text/javascript"
-	// 		src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js?ver=1.12.4-wp"
-	// 		//src="/jquery.js?ver=1.12.4-wp"
-	// 	/>,
-	// ])
+	setHeadComponents([
+		<script
+			key="1"
+			type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js?ver=1.12.4-wp"
+			//src="/jquery.js?ver=1.12.4-wp"
+		/>,
+	])
 	setHeadComponents([
 		<script
 			key="2"
@@ -29,14 +29,15 @@ exports.onRenderBody = ({
 			src="/jquery-migrate.js?ver=1.4.1"
 		/>,
 	])
-	// setPostBodyComponents([
-	// 	<script
-	// 		key="3"
-	// 		type="text/javascript"
-	// 		//src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.js"
-	// 		src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"
-	// 	/>,
-	// ])
+	
+	setPreBodyComponents([
+		<script
+			key="3"
+			type="text/javascript"
+			src="/article-card.js"
+			//src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"
+		/>,
+	])
 
 	// setPostBodyComponents([
 	// 	<script

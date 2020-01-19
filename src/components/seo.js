@@ -78,7 +78,7 @@ function SEO({ description, lang, meta, title }) {
 		  
 		  <script type='text/javascript' src='https://highfrequencyperspectives.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script> */}
 
-		  {/* <script src='/jquery.js?ver=1.12.4-wp'></script>
+		  {/* <script src='/jquery.js?ver=1.12.4-wp'></script> */}
 		  {/* <script src='/jquery-migrate.js?ver=1.4.1'></script> */}
 		  <script src="/article-card.js"></script> 
 
