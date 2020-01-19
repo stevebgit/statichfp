@@ -80,7 +80,7 @@ function SEO({ description, lang, meta, title }) {
 
 		  {/* <script src='/jquery.js?ver=1.12.4-wp'></script> */}
 		  {/* <script src='/jquery-migrate.js?ver=1.4.1'></script> */}
-		  <script src="/article-card2.js"></script> 
+		  {/* <script src="/article-card2.js"></script>  */}
 
 	</Helmet>
   )
